@@ -1,0 +1,55 @@
+{
+    "groups": [
+      {
+        "name": "app",
+        "children": [
+          "lasttouch",
+          "front"
+        ]
+      }
+    ],
+    "services": [
+        {
+            "name": "fibonacci",
+            "path": "fibonacci",
+            "commands": {
+                "build": "go install",
+                "launch": "fibonacci"
+            }
+        },
+        {
+            "name": "lasttouch",
+            "path": "lasttouch",
+            "commands": {
+                "build": "go install",
+                "launch": "lasttouch"
+            }
+        },
+        {
+            "name": "front",
+            "path": "front",
+            "commands": {
+                "build": "go install",
+                "launch": "front"
+            }
+        },
+        {
+            "name": "database",
+            "path": "database",
+            "commands": {
+                "launch": "docker-compose up --build"
+            },
+            "launch_checks": {
+                "log_text": "database system is ready"
+            }
+        },
+        {
+            "name": "messages",
+            "path": "messages",
+            "commands": {
+                "build": "go install",
+                "launch": "messages"
+            }
+        }
+    ]
+}
