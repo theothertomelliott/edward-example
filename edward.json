@@ -9,6 +9,15 @@
       }
     ],
     "services": [
+       {
+          "name": "front",
+          "path": "front",
+          "commands": {
+              "build": "go install",
+              "launch": "front"
+          },
+          "watch": "front"
+        },
         {
             "name": "fibonacci",
             "path": "fibonacci",
@@ -23,14 +32,6 @@
             "commands": {
                 "build": "go install",
                 "launch": "lasttouch"
-            }
-        },
-        {
-            "name": "front",
-            "path": "front",
-            "commands": {
-                "build": "go install",
-                "launch": "front"
             }
         },
         {
