@@ -42,14 +42,6 @@
             "launch_checks": {
                 "log_text": "database system is ready"
             }
-        },
-        {
-            "name": "messages",
-            "path": "messages",
-            "commands": {
-                "build": "go install",
-                "launch": "messages"
-            }
         }
     ]
 }
