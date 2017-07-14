@@ -9,6 +9,8 @@ import (
 )
 
 func main() {
+	log.SetOutput(os.Stdout)
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8082"
