@@ -1,5 +1,5 @@
 # edward-example
-An example set of microservices to demonstrate the Edward tool
+An example set of microservices to demonstrate the [Edward](https://github.com/yext/edward) tool
 
 ## Services
 
